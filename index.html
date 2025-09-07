@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Student: Bohdan Shevchenko</p>
-    <p>Group: 6.1213-пі-1</p>
-</body>
+  <head>
+    <!-- Кодування сторінки -->
+    <meta charset="UTF-8" />
+
+    <!-- Адаптивність сторінки для мобільних пристроїв -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Опис сторінки для SEO -->
+    <meta
+      name="description"
+      content="Головна сторінка навчального лендінгу: новини, послуги, переваги."
+    />
+
+    <!-- Заголовок сторінки -->
+    <title>Лабораторна 2 - Головна</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.ico" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+    <header class="main-header">
+      <h1 class="site-title">Лендінг навчального проєкту</h1>
+      <nav class="main-nav" aria-label="Головна навігація">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" aria-current="page">
+              Головна
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/contacts.html" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article class="news-article">
+        <header class="article-header">
+          <h2>Новина про користувача</h2>
+          <p>Короткий опис новини для залучення уваги читача.</p>
+        </header>
+        <figure class="article-figure">
+          <img
+            src="assets/images/user-news.jpg"
+            alt="Ілюстрація новини про користувача"
+            width="600"
+          />
+          <figcaption>Фото: користувач на заході</figcaption>
+        </figure>
+        <p>
+          Тут можна додати текст новини. Наприклад, розповісти про досягнення
+          користувача або подію.
+        </p>
+      </article>
+
+      <section class="advantages-section" aria-labelledby="advantages-title">
+        <h3 id="advantages-title">Переваги нашого сервісу</h3>
+        <ul>
+          <li>Швидке обслуговування</li>
+          <li>Доступні ціни</li>
+          <li>Якісна підтримка користувачів</li>
+        </ul>
+      </section>
+
+      <section class="table-section" aria-labelledby="table-title">
+        <h3 id="table-title">Порівняння послуг</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Послуга</th>
+              <th scope="col">Ціна</th>
+              <th scope="col">Тривалість</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Базова консультація</td>
+              <td>50€</td>
+              <td>30 хв</td>
+            </tr>
+            <tr>
+              <td>Повний пакет</td>
+              <td>120€</td>
+              <td>1 год</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside class="sidebar">
+        <h3>Корисні посилання</h3>
+        <ul>
+          <li>
+            <a
+              href="https://example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Приклад зовнішнього сайту
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://example2.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ще один ресурс
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="main-footer">
+      <p>&copy; 2025 Група 6-1213-1, Bohdan Shevchenko</p>
+    </footer>
+  </body>
 </html>
