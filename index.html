@@ -18,101 +18,108 @@
 
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css">
   </head>
 
   <body>
-    <a class="skip-link" href="./index.html">Перейти до основного контенту</a>
+   <a class="skip-link" href="#main">Перейти до основного контенту</a>
 
-    <header class="main-header">
-      <h1 class="site-title">Лендінг навчального проєкту</h1>
-      <nav class="main-nav" aria-label="Головна навігація">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link" aria-current="page">
+    <header class="header">
+      <h1 class="header__title">Лендінг навчального проєкту</h1>
+      <nav class="navigation" aria-label="Головна навігація">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link" aria-current="page">
               Головна
             </a>
           </li>
-          <li class="nav-item">
-            <a href="./pages/about.html" class="nav-link">About</a>
+          <li class="navigation__item">
+            <a href="./pages/about.html" class="navigation__link">About</a>
           </li>
-          <li class="nav-item">
-            <a href="./pages/contacts.html" class="nav-link">Contacts</a>
+          <li class="navigation__item">
+            <a href="./pages/contacts.html" class="navigation__link">Contacts</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main id="main">
-      <article class="news-article">
-        <header class="article-header">
-          <h2>Новина про користувача</h2>
-          <p>Короткий опис новини для залучення уваги читача.</p>
-        </header>
-        <figure class="article-figure">
+    <main class="main" id="main">
+      <article class="article">
+        <h2 class="article__title">Новина про користувача</h2>
+        <p class="article__text">
+          Короткий опис новини для залучення уваги читача.
+        </p>
+
+        <figure class="media article__media media--framed">
           <img
             src="assets/images/8-bit City_1920x1080.jpg"
             alt="Ілюстрація новини про користувача"
+            class="media__img"
             width="600"
           />
-          <figcaption>Фото: користувач на заході</figcaption>
+          <figcaption class="media__caption">Фото: користувач на заході</figcaption>
         </figure>
-        <p>
+
+        <p class="article__text">
           Тут можна додати текст новини. Наприклад, розповісти про досягнення
           користувача або подію.
         </p>
       </article>
 
-      <section class="advantages-section" aria-labelledby="advantages-title">
-        <h3 id="advantages-title">Переваги нашого сервісу</h3>
-        <ul>
-          <li>Швидке обслуговування</li>
-          <li>Доступні ціни</li>
-          <li>Якісна підтримка користувачів</li>
+      <section class="services" aria-labelledby="services-title">
+        <h3 class="services__title" id="services-title">Переваги нашого сервісу</h3>
+        <ul class="services__list">
+          <li class="services__item">Швидке обслуговування</li>
+          <li class="services__item">Доступні ціни</li>
+          <li class="services__item">Якісна підтримка користувачів</li>
         </ul>
       </section>
 
-      <section class="table-section" aria-labelledby="table-title">
-        <h3 id="table-title">Порівняння послуг</h3>
-        <table>
+      <section class="services" aria-labelledby="services-table-title">
+        <h3 class="services__title" id="services-table-title">Порівняння послуг</h3>
+        <table class="services__table">
           <thead>
-            <tr>
-              <th scope="col">Послуга</th>
-              <th scope="col">Ціна</th>
-              <th scope="col">Тривалість</th>
+            <tr class="services__row">
+              <th class="services__header" scope="col">Послуга</th>
+              <th class="services__header" scope="col">Ціна</th>
+              <th class="services__header" scope="col">Тривалість</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Базова консультація</td>
-              <td>50€</td>
-              <td>30 хв</td>
+            <tr class="services__row">
+              <td class="services__cell">Базова консультація</td>
+              <td class="services__cell">50€</td>
+              <td class="services__cell">30 хв</td>
             </tr>
-            <tr>
-              <td>Повний пакет</td>
-              <td>120€</td>
-              <td>1 год</td>
+            <tr class="services__row">
+              <td class="services__cell">Повний пакет</td>
+              <td class="services__cell">120€</td>
+              <td class="services__cell">1 год</td>
             </tr>
           </tbody>
         </table>
       </section>
 
-      <aside class="sidebar">
-        <h3>Корисні посилання</h3>
-        <ul>
-          <li>
+      <aside class="sidebar sidebar--links">
+        <h3 class="sidebar__title">Корисні посилання</h3>
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
             <a
               href="https://example.com"
               target="_blank"
               rel="noopener noreferrer"
+              class="sidebar__link"
             >
               Приклад зовнішнього сайту
             </a>
           </li>
-          <li>
+          <li class="sidebar__item">
             <a
               href="https://example2.com"
               target="_blank"
               rel="noopener noreferrer"
+              class="sidebar__link"
             >
               Ще один ресурс
             </a>
@@ -121,8 +128,10 @@
       </aside>
     </main>
 
-    <footer class="main-footer">
-      <p>&copy; 2025 Група 6-1213-1, Bohdan Shevchenko</p>
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; 2025 Група 6-1213-1, Bohdan Shevchenko
+      </p>
     </footer>
   </body>
 </html>
