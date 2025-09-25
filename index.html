@@ -1,137 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Кодування сторінки -->
     <meta charset="UTF-8" />
 
-    <!-- Адаптивність сторінки для мобільних пристроїв -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Опис сторінки для SEO -->
     <meta
       name="description"
       content="Головна сторінка навчального лендінгу: новини, послуги, переваги."
     />
 
-    <!-- Заголовок сторінки -->
     <title>Лабораторна 2 - Головна</title>
 
-    <!-- Favicon -->
     <link rel="icon" href="./assets/images/favicon.ico" />
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/reset.css">
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
   <body>
-   <a class="skip-link" href="#main">Перейти до основного контенту</a>
-
-    <header class="header">
-      <h1 class="header__title">Лендінг навчального проєкту</h1>
-      <nav class="navigation" aria-label="Головна навігація">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="index.html" class="navigation__link" aria-current="page">
-              Головна
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="./pages/about.html" class="navigation__link">About</a>
-          </li>
-          <li class="navigation__item">
-            <a href="./pages/contacts.html" class="navigation__link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="main" id="main">
-      <article class="article">
-        <h2 class="article__title">Новина про користувача</h2>
-        <p class="article__text">
-          Короткий опис новини для залучення уваги читача.
-        </p>
-
-        <figure class="media article__media media--framed">
-          <img
-            src="assets/images/8-bit City_1920x1080.jpg"
-            alt="Ілюстрація новини про користувача"
-            class="media__img"
-            width="600"
-          />
-          <figcaption class="media__caption">Фото: користувач на заході</figcaption>
-        </figure>
-
-        <p class="article__text">
-          Тут можна додати текст новини. Наприклад, розповісти про досягнення
-          користувача або подію.
-        </p>
-      </article>
-
-      <section class="services" aria-labelledby="services-title">
-        <h3 class="services__title" id="services-title">Переваги нашого сервісу</h3>
-        <ul class="services__list">
-          <li class="services__item">Швидке обслуговування</li>
-          <li class="services__item">Доступні ціни</li>
-          <li class="services__item">Якісна підтримка користувачів</li>
-        </ul>
-      </section>
-
-      <section class="services" aria-labelledby="services-table-title">
-        <h3 class="services__title" id="services-table-title">Порівняння послуг</h3>
-        <table class="services__table">
-          <thead>
-            <tr class="services__row">
-              <th class="services__header" scope="col">Послуга</th>
-              <th class="services__header" scope="col">Ціна</th>
-              <th class="services__header" scope="col">Тривалість</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="services__row">
-              <td class="services__cell">Базова консультація</td>
-              <td class="services__cell">50€</td>
-              <td class="services__cell">30 хв</td>
-            </tr>
-            <tr class="services__row">
-              <td class="services__cell">Повний пакет</td>
-              <td class="services__cell">120€</td>
-              <td class="services__cell">1 год</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <div class="webpage-container">
+      <header class="header">
+        <h1 class="header__title">Лендінг навчального проєкту</h1>
+        <nav class="navigation" aria-label="Головна навігація">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link" aria-current="page">
+                Home
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./pages/about.html" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./pages/contacts.html" class="navigation__link">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
       <aside class="sidebar sidebar--links">
-        <h3 class="sidebar__title">Корисні посилання</h3>
-        <ul class="sidebar__list">
-          <li class="sidebar__item">
-            <a
-              href="https://example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="sidebar__link"
-            >
-              Приклад зовнішнього сайту
-            </a>
-          </li>
-          <li class="sidebar__item">
-            <a
-              href="https://example2.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="sidebar__link"
-            >
-              Ще один ресурс
-            </a>
-          </li>
-        </ul>
+        <section class="sidebar-sections">
+          <h3 class="sidebar__title">Корисні посилання</h3>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a
+                href="https://www.w3schools.com/css/css3_flexbox.asp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sidebar__link"
+              >
+                If you want to learn "grid"
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a
+                href="https://flexboxfroggy.com/#uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sidebar__link"
+              >
+                Simple game to improve your "flex" knowledges
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="sidebar-sections">
+          <h3 class="sidebar__title">Цінності</h3>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">Якість коду та прозорість</li>
+            <li class="sidebar__item">Навчання через практику</li>
+            <li class="sidebar__item">Комунікація та підтримка</li>
+          </ul>
+        </section>
+        <section class="sidebar-sections">
+          <h3 class="sidebar__title">Соціальні мережі</h3>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a
+                href="https://www.facebook.com/"
+                aria-label="Ми у Facebook"
+                class="sidebar__link"
+              >
+                Facebook
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Ми у Instagram"
+                class="sidebar__link"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a
+                href="https://www.linkedin.com/"
+                aria-label="Ми у LinkedIn"
+                class="sidebar__link"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </section>
       </aside>
-    </main>
 
-    <footer class="footer">
-      <p class="footer__text">
-        &copy; 2025 Група 6-1213-1, Bohdan Shevchenko
-      </p>
-    </footer>
+      <main class="main" id="main">
+        <article class="article">
+          <h2 class="article__title">Новина про користувача</h2>
+          <p class="article__text">
+            Короткий опис новини для залучення уваги читача.
+          </p>
+
+          <figure class="media article__media media--framed">
+            <img
+              src="assets/images/8-bit City_1920x1080.jpg"
+              alt="Ілюстрація новини про користувача"
+              class="media__img"
+              width="600"
+            />
+            <figcaption class="media__caption">
+              Фото: користувач на заході
+            </figcaption>
+          </figure>
+
+          <p class="article__text">
+            Тут можна додати текст новини. Наприклад, розповісти про досягнення
+            користувача або подію. Наприклад, користувач завершив важливий
+            проєкт, який отримав високу оцінку від викладачів та колег. Також
+            можна розповісти про майбутні плани, участь у конференціях чи
+            тренінгах, щоб зацікавити читачів.
+          </p>
+        </article>
+
+        <section class="services" aria-labelledby="services-title">
+          <h3 class="services__title" id="services-title">
+            Переваги нашого сервісу
+          </h3>
+          <ul class="services__list">
+            <li class="services__item">Швидке обслуговування</li>
+            <li class="services__item">Доступні ціни</li>
+            <li class="services__item">Якісна підтримка користувачів</li>
+          </ul>
+        </section>
+
+        <section class="services" aria-labelledby="services-table-title">
+          <h3 class="services__title" id="services-table-title">
+            Порівняння послуг
+          </h3>
+          <table class="services__table">
+            <thead>
+              <tr class="services__row">
+                <th class="services__header" scope="col">Послуга</th>
+                <th class="services__header" scope="col">Ціна</th>
+                <th class="services__header" scope="col">Тривалість</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="services__row">
+                <td class="services__cell">Базова консультація</td>
+                <td class="services__cell">50€</td>
+                <td class="services__cell">30 хв</td>
+              </tr>
+              <tr class="services__row">
+                <td class="services__cell">Повний пакет</td>
+                <td class="services__cell">120€</td>
+                <td class="services__cell">1 год</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__text">
+          &copy; 2025 Група 6-1213-1, Bohdan Shevchenko
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
