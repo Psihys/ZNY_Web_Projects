@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Заголовок страницы */
 .main__title {
   font-size: var(--font-size-heading);
@@ -8,50 +7,6 @@
 }
 
 /* Форма */
-=======
-/* Header */
-.header {
-  background: var(--color-primary);
-  color: #fff;
-  padding: var(--spacing-md) var(--spacing-lg);
-}
-.header__title {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-.navigation__list {
-  display: flex;
-  gap: var(--spacing-md);
-  list-style: none;
-}
-.navigation__link {
-  color: #fff;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--radius-sm);
-  transition: background 0.2s;
-}
-.navigation__link:hover,
-.navigation__link[aria-current="page"] {
-  background: var(--color-primary-hover);
-}
-
-/* Main */
-.main {
-  max-width: 800px;
-  margin: var(--spacing-lg) auto;
-  background: var(--color-surface);
-  padding: var(--spacing-lg);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-}
-.main__title {
-  font-size: 1.6rem;
-  margin-bottom: var(--spacing-lg);
-  color: var(--color-primary);
-}
-
-/* Contact Form */
->>>>>>> c29ac16ee58d6cceb62cf5e24c81c46662c0ea6f
 .contact-form {
   background-color: var(--color-surface);
   padding: var(--spacing-md);
@@ -65,16 +20,10 @@
 }
 
 .contact-form__title {
-<<<<<<< HEAD
   font-size: var(--font-size-subheading);
   color: var(--color-primary);
   margin-bottom: var(--spacing-sm);
   text-align: center;
-=======
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-primary);
->>>>>>> c29ac16ee58d6cceb62cf5e24c81c46662c0ea6f
 }
 
 /* Элементы формы */
@@ -92,7 +41,6 @@
 
 .contact-form__input,
 .contact-form__textarea {
-<<<<<<< HEAD
   padding: var(--spacing-sm);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
@@ -101,39 +49,18 @@
   background-color: var(--color-background);
   outline: none;
   transition: border-color 0.3s ease;
-=======
-  padding: 0.6rem 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: var(--radius-sm);
-  font-size: 1rem;
-  transition: border 0.2s, box-shadow 0.2s;
->>>>>>> c29ac16ee58d6cceb62cf5e24c81c46662c0ea6f
 }
 
 .contact-form__input:focus,
 .contact-form__textarea:focus {
   border-color: var(--color-primary);
-<<<<<<< HEAD
-=======
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(74, 105, 189, 0.2);
->>>>>>> c29ac16ee58d6cceb62cf5e24c81c46662c0ea6f
 }
 
 /* Кнопка отправки */
 .contact-form__button {
-<<<<<<< HEAD
   padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-primary);
   color: var(--color-surface);
-=======
-  align-self: flex-start;
-  padding: 0.75rem 1.5rem;
-  background: var(--color-primary);
-  color: #fff;
-  font-size: 1rem;
-  border-radius: var(--radius-sm);
->>>>>>> c29ac16ee58d6cceb62cf5e24c81c46662c0ea6f
   border: none;
   border-radius: var(--border-radius);
   font-size: var(--font-size-base);
@@ -142,61 +69,6 @@
 }
 
 .contact-form__button:hover {
-<<<<<<< HEAD
   background-color: var(--color-primary-hover);
   color: var(--color-text);
 }
-=======
-  background: var(--color-primary-hover);
-}
-
-/* Sidebar */
-.sidebar {
-  max-width: 300px;
-  margin: var(--spacing-lg) auto;
-  background: var(--color-surface);
-  padding: 1.5rem;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-}
-.sidebar__title {
-  font-size: 1.2rem;
-  margin-bottom: var(--spacing-md);
-  color: var(--color-primary);
-}
-.sidebar__list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.sidebar__link {
-  color: var(--color-primary);
-  font-weight: 500;
-  transition: color 0.2s;
-}
-.sidebar__link:hover {
-  color: var(--color-primary-hover);
-}
-
-/* Footer */
-.footer {
-  background: var(--color-primary);
-  color: #fff;
-  text-align: center;
-  padding: var(--spacing-md);
-  margin-top: var(--spacing-lg);
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .navigation__list {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .main {
-    margin: 1rem;
-    padding: 1.5rem;
-  }
-}
->>>>>>> c29ac16ee58d6cceb62cf5e24c81c46662c0ea6f
