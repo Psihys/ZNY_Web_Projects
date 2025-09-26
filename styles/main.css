@@ -1,3 +1,4 @@
+/* ///////// Root ////////////// */
 :root {
   --color-primary: #2a7ae4;
   --color-secondary: #ff9800;
@@ -26,6 +27,8 @@
   --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* ///////// WebPage layout  ////////////// */
+
 .webpage-container {
   display: grid;
   grid-template-areas: 'header header' 'sidebar main' 'footer footer';
@@ -33,6 +36,8 @@
   gap: 10px;
   padding: 5px;
 }
+
+/* ///////// Header ////////////// */
 
 .header {
   grid-area: header;
@@ -92,6 +97,8 @@
   text-decoration: underline;
 }
 
+/* ///////// Aside ////////////// */
+
 .sidebar {
   grid-area: sidebar;
   background-color: var(--color-surface);
@@ -145,6 +152,8 @@
   text-decoration: underline;
 }
 
+/* ///////// Main ////////////// */
+
 .main {
   grid-area: main;
   background-color: var(--color-background);
@@ -158,10 +167,16 @@
   gap: 10px;
 }
 
+/* ///////// Footer ////////////// */
+
 .footer {
-  background-color: var(--color-surface);
+  grid-area: footer;
+  width: 100%;
+  height: auto;
+
+  background-color: var(--color-primary); /* темно-синий фон */
   padding: var(--spacing-lg);
-  color: var(--color-text);
+  color: #ffffff; /* белый текст */
 }
 
 .footer__container {
@@ -177,10 +192,10 @@
   margin: 0;
 }
 
-.footer__contacts h4 {
+.footer__contacts h3 {
   font-size: var(--font-size-subheading);
-  color: var(--color-primary);
   margin-bottom: var(--spacing-sm);
+  margin-top: 0;
 }
 
 .footer__contacts ul {
@@ -194,11 +209,12 @@
 }
 
 .footer__contacts a {
-  color: var(--color-link);
+  color: var(--color-background); /* светлый для ссылок */
   text-decoration: none;
 }
 
 .footer__contacts a:hover {
+  color: var(--color-link-hover); /* насыщенный синий при ховере */
   text-decoration: underline;
 }
 
@@ -209,4 +225,3 @@
     gap: var(--spacing-md);
   }
 }
-
