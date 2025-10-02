@@ -31,10 +31,12 @@
 
 .webpage-container {
   display: grid;
-  grid-template-areas: 'header header' 'sidebar main' 'footer footer';
-  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 'header ' 'sidebar' ' main' ' footer';
+  grid-template-columns: 1fr;
   gap: 10px;
   padding: 5px;
+
+  min-height: 100dvh;
 }
 
 /* ///////// Header ////////////// */
@@ -181,7 +183,7 @@
 
 .footer__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--spacing-lg);
   max-width: 1200px;
   margin: 0 auto;
@@ -219,9 +221,49 @@
 }
 
 /* Адаптив для мобильных устройств */
-@media (max-width: 768px) {
-  .footer__container {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
+@media (min-width: 640px) {
+  .webpage-container {
+    grid-template-areas:
+      'header header'
+      'sidebar main'
+      'footer footer';
+    grid-template-columns: 220px 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+    .footer__container {
+    grid-template-columns: 1fr minmax(220px, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .webpage-container {
+    grid-template-columns: 280px 1fr;
+  }
+
+    .footer__container {
+    grid-template-columns: 1fr minmax(220px, 1fr);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #121212;
+    --color-surface: #1e1e1e;
+    --color-text: #e0e0e0;
+    --color-text-light: #b0b0b0;
+    --color-border: #333333;
+    --color-link: #4aa3ff;
+    --color-link-hover: #1a5cbf;
+    --color-primary: #4aa3ff;
+    --color-secondary: #ffb74d;
+
+    --color-background: #0d1b2a;
+  }
+
+  /* footer__contacts: убрать фон, если был */
+  .footer__contacts {
+    background: none;
   }
 }

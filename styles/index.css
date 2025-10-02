@@ -1,13 +1,15 @@
 .news{
+  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: center;
-  gap: 10px;
-
+  gap: 15px;
 }
 
 .article {
+  max-width: 500px;
   background-color: var(--color-surface);
   padding: var(--spacing-md);
   border-radius: var(--border-radius);
