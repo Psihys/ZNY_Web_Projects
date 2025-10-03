@@ -1,13 +1,15 @@
 .news{
+  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: center;
-  gap: 10px;
-
+  gap: 15px;
 }
 
 .article {
+  max-width: 500px;
   background-color: var(--color-surface);
   padding: var(--spacing-md);
   border-radius: var(--border-radius);
@@ -29,6 +31,8 @@
 
 .media {
   margin: var(--spacing-md) 0;
+  aspect-ratio: 16/9;
+  overflow: clip;
 }
 
 .article__media {
@@ -48,7 +52,16 @@
   width: 100%;
   height: auto;
   display: block;
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--border-radius);
 }
+
+.media__img img {
+  border-radius: var(--border-radius);
+}
+
 
 .media__caption {
   font-size: var(--font-size-small);
