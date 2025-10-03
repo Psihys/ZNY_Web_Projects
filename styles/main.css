@@ -3,7 +3,9 @@
   --color-primary: #2a7ae4;
   --color-secondary: #ff9800;
   --color-background: #f9f9f9;
+  --second-background-color: #2a7ae4;
   --color-surface: #ffffff;
+  --default-text-color:white;
   --color-text: #333333;
   --color-text-light: #666666;
   --color-border: #dddddd;
@@ -11,11 +13,12 @@
   --color-link-hover: #1a5cbf;
 
   --font-family-base: 'Segoe UI', Arial, sans-serif;
-  --font-size-base: 16px;
-  --font-size-heading: 2rem;
-  --font-size-subheading: 1.5rem;
-  --font-size-small: 0.875rem;
-  --font-size-current_page: 1.2rem;
+  
+  --font-size-base: clamp(14px, 1vw + 0.5rem, 16px);
+  --font-size-heading: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  --font-size-subheading: clamp(1.2rem, 1.5vw + 0.8rem, 2rem);
+  --font-size-small: clamp(0.75rem, 0.8vw + 0.4rem, 0.875rem);
+  --font-size-current_page: clamp(1rem, 1vw + 0.6rem, 1.2rem);
 
   --spacing-xs: 4px;
   --spacing-sm: 8px;
@@ -55,14 +58,14 @@
   align-items: center;
   gap: 200px;
 
-  background-color: var(--color-primary);
-  color: var(--color-surface);
+  background-color: var(--second-background-color);
+  color: var(--default-text-color);
   box-shadow: var(--box-shadow);
 }
 
 .header__title {
   font-size: var(--font-size-heading);
-  color: var(--color-surface);
+  color: var(--default-text-color);
   margin: 0;
 }
 
@@ -86,7 +89,7 @@
 }
 
 .navigation__link {
-  color: var(--color-surface);
+  color: var(--default-text-color);
   text-decoration: none;
   font-size: var(--font-size-base);
   transition: color 0.3s ease;
@@ -176,7 +179,7 @@
   width: 100%;
   height: auto;
 
-  background-color: var(--color-primary); /* темно-синий фон */
+  background-color: var(--second-background-color); /* темно-синий фон */
   padding: var(--spacing-lg);
   color: #ffffff; /* белый текст */
 }
@@ -232,7 +235,7 @@
     padding: 10px;
   }
 
-    .footer__container {
+  .footer__container {
     grid-template-columns: 1fr minmax(220px, 1fr);
   }
 }
@@ -242,7 +245,7 @@
     grid-template-columns: 280px 1fr;
   }
 
-    .footer__container {
+  .footer__container {
     grid-template-columns: 1fr minmax(220px, 1fr);
   }
 }
@@ -250,6 +253,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: #121212;
+    --second-background-color: #121212;
     --color-surface: #1e1e1e;
     --color-text: #e0e0e0;
     --color-text-light: #b0b0b0;
@@ -258,8 +262,6 @@
     --color-link-hover: #1a5cbf;
     --color-primary: #4aa3ff;
     --color-secondary: #ffb74d;
-
-    --color-background: #0d1b2a;
   }
 
   /* footer__contacts: убрать фон, если был */
