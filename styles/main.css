@@ -183,7 +183,9 @@
   background-color: var(--second-background-color); /* темно-синий фон */
   padding: var(--spacing-lg);
   color: #ffffff; /* белый текст */
+
 }
+
 
 .footer__container {
   display: grid;
@@ -215,7 +217,7 @@
 }
 
 .footer__contacts a {
-  color: var(--color-background); /* светлый для ссылок */
+  color: var(--color-link); /* светлый для ссылок */
   text-decoration: none;
 }
 
