@@ -1,0 +1,8 @@
+.webpage-container {
+  display: grid;
+  grid-template-areas: 'header ' 'sidebar' ' main' ' footer';
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 5px;
+  min-height: 100dvh;
+}

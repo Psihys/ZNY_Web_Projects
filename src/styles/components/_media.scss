@@ -1,0 +1,31 @@
+.media {
+  margin: var(--spacing-md) 0;
+  aspect-ratio: 16/9;
+  overflow: clip;
+
+  &--framed {
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-xs);
+    background-color: var(--color-surface);
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius);
+
+    img {
+      border-radius: var(--border-radius);
+    }
+  }
+
+  &__caption {
+    font-size: var(--font-size-small);
+    color: var(--color-text-light);
+    text-align: center;
+    margin-top: var(--spacing-xs);
+  }
+}
