@@ -1,0 +1,11 @@
+.main {
+  grid-area: main;
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 10px;
+}
