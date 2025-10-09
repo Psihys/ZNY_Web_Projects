@@ -1,206 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+{{#> layout}}
+<h2 class="contacts__main__title">Зв'яжіться з нами</h2>
 
-    <link rel="icon" href="./assets/images/favicon.ico" />
-  </head>
-  <body>
-    
+<form
+  action="#"
+  method="post"
+  class="contact-form"
+  aria-labelledby="contact-form-title"
+>
+  <h3 id="contact-form-title" class="contact-form__title">
+    Форма зворотного зв'язку
+  </h3>
 
-    <div class="webpage-container">
-      <header class="header">
-        <h1 class="header__title">Лендінг навчального проєкту</h1>
-        <nav class="navigation" aria-label="Головна навігація">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="../index.html" class="navigation__link">
-                Home
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="./about.html" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link" aria-current="page">
-                Contacts
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <aside class="sidebar sidebar--links">
-        <section class="sidebar-sections">
-          <h3 class="sidebar__title">Корисні посилання</h3>
-          <ul class="sidebar__list">
-            <li class="sidebar__item">
-              <a
-                href="https://www.w3schools.com/css/css3_flexbox.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sidebar__link"
-              >
-                If you want to learn "grid"
-              </a>
-            </li>
-            <li class="sidebar__item">
-              <a
-                href="https://flexboxfroggy.com/#uk"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sidebar__link"
-              >
-                Simple game to improve your "flex" knowledges
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="sidebar-sections">
-          <h3 class="sidebar__title">Цінності</h3>
-          <ul class="sidebar__list">
-            <li class="sidebar__item">Якість коду та прозорість</li>
-            <li class="sidebar__item">Навчання через практику</li>
-            <li class="sidebar__item">Комунікація та підтримка</li>
-          </ul>
-        </section>
-        <section class="sidebar-sections">
-          <h3 class="sidebar__title">Соціальні мережі</h3>
-          <ul class="sidebar__list">
-            <li class="sidebar__item">
-              <a
-                href="https://www.facebook.com/"
-                aria-label="Ми у Facebook"
-                class="sidebar__link"
-              >
-                Facebook
-              </a>
-            </li>
-            <li class="sidebar__item">
-              <a
-                href="https://www.instagram.com/"
-                aria-label="Ми у Instagram"
-                class="sidebar__link"
-              >
-                Instagram
-              </a>
-            </li>
-            <li class="sidebar__item">
-              <a
-                href="https://www.linkedin.com/"
-                aria-label="Ми у LinkedIn"
-                class="sidebar__link"
-              >
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </section>
-      </aside>
+  <div class="contact-form__item">
+    <label for="name" class="contact-form__label">Ім'я</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="contact-form__input"
+      placeholder="Ваше ім'я"
+      required
+      minlength="2"
+      maxlength="50"
+      pattern="^[А-Яа-яЇїІіЄєҐґA-Za-z\s\-']+$"
+      title="Ім'я може містити лише літери, апостроф або дефіс"
+    />
+  </div>
 
-    <main class="main" id="main">
-      <h2 class="contacts__main__title">Зв'яжіться з нами</h2>
+  <div class="contact-form__item">
+    <label for="email" class="contact-form__label">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="contact-form__input"
+      placeholder="Ваш email"
+      required
+    />
+  </div>
 
-      <form
-        action="#"
-        method="post"
-        class="contact-form"
-        aria-labelledby="contact-form-title"
-      >
-        <h3 id="contact-form-title" class="contact-form__title">
-          Форма зворотного зв’язку
-        </h3>
+  <div class="contact-form__item">
+    <label for="phone" class="contact-form__label">Телефон</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      class="contact-form__input"
+      placeholder="+380XXXXXXXXX"
+      required
+      pattern="^(\+?38)?\s?0\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$"
+      title="Введіть номер у форматі +380XXXXXXXXX"
+    />
+  </div>
 
-        <div class="contact-form__item">
-          <label for="name" class="contact-form__label">Ім’я</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="contact-form__input"
-            placeholder="Ваше ім’я"
-            required
-            minlength="2"
-            maxlength="50"
-            pattern="^[А-Яа-яЇїІіЄєҐґA-Za-z\s\-']+$"
-            title="Ім’я може містити лише літери, апостроф або дефіс"
-          />
-        </div>
+  <div class="contact-form__item">
+    <label for="msg" class="contact-form__label">Повідомлення</label>
+    <textarea
+      id="msg"
+      name="msg"
+      class="contact-form__textarea"
+      placeholder="Ваше повідомлення"
+      rows="5"
+      required
+      minlength="10"
+      maxlength="500"
+    ></textarea>
+  </div>
 
-        <div class="contact-form__item">
-          <label for="email" class="contact-form__label">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="contact-form__input"
-            placeholder="Ваш email"
-            required
-          />
-        </div>
-
-        <div class="contact-form__item">
-          <label for="phone" class="contact-form__label">Телефон</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            class="contact-form__input"
-            placeholder="+380XXXXXXXXX"
-            required
-            pattern="^(\+?38)?\s?0\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$"
-            title="Введіть номер у форматі +380XXXXXXXXX"
-          />
-        </div>
-
-        <div class="contact-form__item">
-          <label for="msg" class="contact-form__label">Повідомлення</label>
-          <textarea
-            id="msg"
-            name="msg"
-            class="contact-form__textarea"
-            placeholder="Ваше повідомлення"
-            rows="5"
-            required
-            minlength="10"
-            maxlength="500"
-          ></textarea>
-        </div>
-
-        <button type="submit" class="contact-form__button">Надіслати</button>
-      </form>
-    </main>
-
-    
-
-    <footer class="footer">
-        <div class="footer__container">
-
-          <div class="footer__column">
-            <p>
-              Ми — команда студентів, яка створює навчальні проєкти у межах
-              курсу Web-програмування.
-            </p>
-          </div>
-
-          
-          <address class="footer__column footer__contacts">
-            <h3>Контакти</h3>
-            <ul>
-              <li>
-                Email:
-                <a href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li>
-                Телефон:
-                <a href="tel:+380123456789">+380 12 345 67 89</a>
-              </li>
-              <li>Адреса: вул. Прикладна, 1, Київ, Україна</li>
-            </ul>
-          </address>
-        </div>
-      </footer>
-          <script type="module" src="../src/App.js" ></script>
-  </body>
-</html>
+  <button type="submit" class="contact-form__button">Надіслати</button>
+</form>
+{{/layout}}
