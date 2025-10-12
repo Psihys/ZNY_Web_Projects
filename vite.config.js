@@ -13,35 +13,8 @@ export default defineConfig({
       context: {
         siteName: 'Labo-6',
         labName: ' Labo_Number-6',
-        studentGroup: '6-1213-1',
-        studentEmail: 'student@example.com',
       },
-      pages: [
-        {
-          input: resolve(__dirname, 'index.html'),
-          context: {
-            pageTitle: 'Home',
-            studentGroup: '6-1213-1',
-            studentEmail: 'student@example.com',
-          },
-        },
-        {
-          input: resolve(__dirname, 'pages/about.html'),
-          context: {
-            pageTitle: 'About',
-            studentGroup: '6-1213-1',
-            studentEmail: 'student@example.com',
-          },
-        },
-        {
-          input: resolve(__dirname, 'pages/contact.html'),
-          context: {
-            pageTitle: 'Contact',
-            studentGroup: '6-1213-1',
-            studentEmail: 'student@example.com',
-          },
-        },
-      ],
+
       reloadOnPartialChange: true,
     }),
   ],
