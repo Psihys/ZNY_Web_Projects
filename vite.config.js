@@ -9,6 +9,7 @@ const __dirname = dirname(__filename)
 
 export default defineConfig({
   plugins: [
+    tailwindcss(),
     handlebars({
       partialDirectory: resolve(__dirname, 'src', 'partials'),
       context: {

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@source "../..";
+
+@theme static {
+  --color-background-light: #f9f9f9;
+  --color-background-dark: #121212;
+  --second-background-color-dark: #121212;
+}
+
+@layer base {
+  h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+  }
+}
