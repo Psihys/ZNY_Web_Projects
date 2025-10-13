@@ -1,16 +1,14 @@
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--color-background-dark);
-    --second-background-color: var(--second-background-color-dark);
-    --color-surface: #1e1e1e;
-    --color-text: #e0e0e0;
-    --color-text-light: #b0b0b0;
-    --color-border: #333333;
-    --color-link: #4aa3ff;
-    --color-link-hover: #1a5cbf;
-    --color-primary: #4aa3ff;
-    --color-secondary: #ffb74d;
-  }
+.dark {
+  --color-background: #121212;
+  --second-background-color: #121212;
+  --color-surface: #1e1e1e;
+  --color-text: #e0e0e0;
+  --color-text-light: #b0b0b0;
+  --color-border: #333333;
+  --color-link: #4aa3ff;
+  --color-link-hover: #1a5cbf;
+  --color-primary: #4aa3ff;
+  --color-secondary: #ffb74d;
 
   .footer__contacts {
     background: none;

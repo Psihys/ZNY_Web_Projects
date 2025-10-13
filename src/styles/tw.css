@@ -1,14 +1,22 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @source "../..";
 
 @theme static {
   --color-background-light: #f9f9f9;
+  --second-background-color-light: #2a7ae4;
   --color-background-dark: #121212;
   --second-background-color-dark: #121212;
 }
 
 @layer base {
-  h1,h2,h3,h4,h5,h6{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: bold;
   }
 }
+
+@custom-variant dark (&:where(.dark, .dark *))

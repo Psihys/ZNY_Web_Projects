@@ -22,10 +22,23 @@
 }
 
 .navigation {
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   height: auto;
   padding: 0 20px;
+
+  &__button{
+    color: var(--default-text-color);
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    transition: color 0.3s ease;
+    font-weight: 800;
+
+    padding: 5px 10px ;
+    border: 1px solid white ;
+    border-radius: 20px;
+    cursor: pointer;
+  }
 
   &__list {
     display: flex;
