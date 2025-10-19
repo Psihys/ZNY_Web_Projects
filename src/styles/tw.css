@@ -26,25 +26,23 @@
     @apply max-w-[500px] rounded-lg shadow-md;
     background-color: var(--color-surface);
     padding: var(--spacing-md);
-    
   }
 
   .news-article-title {
+    @apply font-bold mb-2;
     font-size: var(--font-size-heading);
     color: var(--color-primary);
-    @apply font-bold mb-2;
   }
 
   .news-article-text {
+    @apply mb-4;
     font-size: var(--font-size-base);
     color: var(--color-text);
     line-height: 1.6;
-    @apply mb-3;
   }
 
   .news-article-media {
-    @apply my-4 overflow-hidden rounded;
-    border: 1px solid var(--color-border);
+    @apply block max-w-full overflow-hidden rounded-lg;
   }
 
   .news-article-img img {
@@ -52,9 +50,8 @@
   }
 
   .news-article-caption {
+    @apply mt-2 text-center;
     font-size: var(--font-size-small);
     color: var(--color-text-light);
-    @apply mt-1 text-center;
   }
 }
-
