@@ -23,26 +23,37 @@
 
 @layer components {
   .news-article {
-    @apply max-w-[500px] rounded-lg shadow-md;
+    @apply max-w-[500px] shadow-md;
     background-color: var(--color-surface);
-    padding: var(--spacing-md);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flow-root; /* ← ключевой фикс */
   }
 
   .news-article-title {
-    @apply font-bold mb-2;
+    @apply font-bold;
     font-size: var(--font-size-heading);
     color: var(--color-primary);
+    margin-bottom: 8px;
   }
 
   .news-article-text {
-    @apply mb-4;
     font-size: var(--font-size-base);
     color: var(--color-text);
     line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .news-article figure {
+    margin: 0; /* сброс дефолтных маржинов figure */
   }
 
   .news-article-media {
-    @apply block max-w-full overflow-hidden rounded-lg;
+    display: block;
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
   }
 
   .news-article-img img {
@@ -50,7 +61,8 @@
   }
 
   .news-article-caption {
-    @apply mt-2 text-center;
+    margin-top: 4px;
+    text-align: center;
     font-size: var(--font-size-small);
     color: var(--color-text-light);
   }
