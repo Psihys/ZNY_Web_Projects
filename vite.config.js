@@ -7,8 +7,8 @@ import tailwindcss from '@tailwindcss/vite'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-export default defineConfig({
-  base: './',
+export default defineConfig(({ command }) => ({
+  base: command === 'serve' ? '/' : './',
   plugins: [
     tailwindcss(),
     handlebars({
@@ -28,7 +28,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir:'docs',
+    outDir: 'docs',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
@@ -37,4 +37,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))
