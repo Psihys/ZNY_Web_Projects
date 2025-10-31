@@ -12,10 +12,10 @@
     
         <title>Labo-6 - About </title>
     
-        <link rel="icon" href="./assets/images/favicon.ico" />  <script type="module" crossorigin src="../assets/App-SA4o1sDT.js"></script>
-  <link rel="stylesheet" crossorigin href="../assets/App-eGzNIVbF.css">
+        <link rel="icon" href="./assets/images/favicon.ico" />  <script type="module" crossorigin src="../assets/App-aUq4vHJu.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/App-BuOMyGdA.css">
 </head>
-<body>
+<body data-page="About">
     <div class="webpage-container">
         <header class='header'>
           <h1 class='header__title'>
@@ -41,17 +41,17 @@
                 </label>
               </li>
               <li class='navigation__item'>
-                <a href='/ZNY_Web_Projects/' class='navigation__link' aria-current='page'>
+                <a href='/' class='navigation__link' aria-current='page'>
                   Home
                 </a>
               </li>
               <li class='navigation__item'>
-                <a href='/ZNY_Web_Projects/pages/about.html' class='navigation__link'>
+                <a href='/pages/about.html' class='navigation__link'>
                   About
                 </a>
               </li>
               <li class='navigation__item'>
-                <a href='/ZNY_Web_Projects/pages/contacts.html' class='navigation__link'>
+                <a href='/pages/contacts.html' class='navigation__link'>
                   Contacts
                 </a>
               </li>
@@ -127,36 +127,34 @@
     
     <main class="main">
         
-        <article class="about-intro">
-          <header>
-            <h2>Про нашу команду</h2>
-          </header>
-          <p>
-            Ми — команда студентів, що створює навчальний веб-проєкт у межах курсу
-            <q>Web-програмування (1 семестр)</q>
-            .
-          </p>
-        </article>
+        <section class="team">
+          <h2 class="team__title">Наша команда</h2>
         
-        <section aria-labelledby="skills-title" class="skills">
-          <h3 id="skills-title">Наші навички</h3>
-          <ul>
-            <li>HTML, семантика, доступність</li>
-            <li>CSS, адаптивна верстка</li>
-            <li>JavaScript, робота з DOM</li>
-          </ul>
-        </section>
+          <div class="team__list"></div>
         
-        <section aria-labelledby="history-title" class="history">
-          <h3 id="history-title">Історія</h3>
-          <dl>
-            <dt>2023</dt>
-            <dd>Перші навчальні проєкти</dd>
-            <dt>2024</dt>
-            <dd>Командні pet-проєкти та хакатони</dd>
-            <dt>2025</dt>
-            <dd>Запуск навчального лендінгу</dd>
-          </dl>
+          <template id="employee-card-tpl">
+            <article class="card employee-card">
+              <img
+                class="employee-card__photo"
+                alt=""
+                width="320"
+                height="240"
+                loading="lazy"
+              />
+              <div class="employee-card__body">
+                <h3 class="employee-card__name"></h3>
+                <p class="employee-card__role"></p>
+                <a
+                  class="btn-brand employee-card__cta"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Профіль
+                </a>
+              </div>
+            </article>
+          </template>
         </section>
     </main>
           <footer class="footer">
