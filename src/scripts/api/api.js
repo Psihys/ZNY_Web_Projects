@@ -12,3 +12,5 @@ export async function loadEmployees(limit = 3, { signal } = {}) {
         photo: `https://picsum.photos/seed/emp-${u.id}/640/400`,
     }));
 }
+
+console.log(loadEmployees())
