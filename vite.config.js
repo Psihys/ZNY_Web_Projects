@@ -8,16 +8,16 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 export default defineConfig(({ command }) => ({
-  base: command === 'serve' ? '/' : './',
+  base: command === 'serve' ? '/' : '/ZNY_Web_Projects/',
   plugins: [
     tailwindcss(),
     handlebars({
       partialDirectory: resolve(__dirname, 'src', 'partials'),
-      context: {
+      context: (pagePath) => ({
         siteName: 'Labo-6',
         labName: ' Labo_Number-6',
-      },
-
+        basePath: command === 'serve' ? '' : '/ZNY_Web_Projects',
+      }),
       reloadOnPartialChange: true,
     }),
   ],
